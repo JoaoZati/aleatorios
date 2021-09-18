@@ -1,0 +1,8 @@
+pear
+apple
+orange
+mandarin
+watermelon
+pomegranate
+ola\n
+Okra
