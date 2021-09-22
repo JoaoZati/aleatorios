@@ -11,3 +11,7 @@ type(n)
 
 n.reshape(3, 9)
 n.reshape(3, 3, 3)
+
+x = numpy.arange(16.0).reshape(4, 4)
+numpy.hsplit(x, 2)
+numpy.hsplit(x, numpy.array([3, 6]))
