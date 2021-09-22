@@ -9,6 +9,8 @@ pandas = "*"
 openpyxl = "*"
 geopy = "*"
 pytest = "*"
+numpy = "*"
+opencv-python = "*"
 
 [dev-packages]
 

@@ -14,10 +14,12 @@ def caracter_to_filepath(caracter: str, filepath: str):
 
     return len([i for i in content if i == letter])
 
+
 def caracter_otimizado(caracter: str, filepath: str):
     file = open(filepath)
     content = file.read()
     return content.count(caracter)
+
 
 if __name__ == '__main__':
     caracter = input('Digite uma letra: ')
@@ -25,4 +27,3 @@ if __name__ == '__main__':
 
     print(caracter_otimizado(caracter, filepath))
     print(caracter_to_filepath(caracter, filepath))
-

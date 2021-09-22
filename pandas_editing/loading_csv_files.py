@@ -43,7 +43,7 @@ cordenates.longitude
 df = df_manipulate
 df['Full Address'] = df['Address'] + ', ' + df['City'] + ', ' + df['State'] + df['Country']
 
-address = df.iloc[1,:].loc['Full Address']
+address = df.iloc[1, :].loc['Full Address']
 nom.geocode(address)
 
 df['Geocode'] = df['Full Address'].apply(nom.geocode)
@@ -52,4 +52,3 @@ df.Geocode[1].latitude
 
 df['Latitude'] = df['Geocode'].apply(lambda x: x.latitude if x != None else None)
 df['Longitude'] = df['Geocode'].apply(lambda x: x.longitude if x != None else None)
-
